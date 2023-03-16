@@ -188,11 +188,10 @@ letter-spacing: var(--unnamed-character-spacing-0);
         justify-content: center;
         align-items: center;
         align-content: center;
-        width: 50%;
         position: absolute;
         opacity: 0;
         transition: opacity 0.3s ease;
-        transform: translate(362px, 1px);
+        top: 0;
       }
       
       #image-container2:hover {
@@ -348,7 +347,7 @@ margin-top: 0px ;
 
 .defileParent {
   display: block;
-  margin: 3vh auto;
+  margin: 2vh auto;
   overflow: hidden;
   position: relative;
   table-layout: fixed;
@@ -386,20 +385,20 @@ margin-top: 0px ;
   display: flex;
   flex-direction: row;
   align-content: center;
-  justify-content: space-around;
-  align-items: center;
-  border-bottom: 4px solid #EE6F52 ;
+  justify-content: space-between;
+  border-bottom: 4px solid #EE6F52;
+  width: 100%;
+  height: 50vh;
 
 }
 .container-img-expertise{
-  width: 50%;
 }
 .text-expertise{
-  width: 50%;
+  width: 60%;
   
 }
 .img-expertise{
-  width: 90%;
+  height: 100%;
 }
 #title-expertise-orange{
   font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-43)/var(--unnamed-line-spacing-54) var(--unnamed-font-family-lust-sans);
@@ -443,19 +442,16 @@ opacity: 1;
 }
 .container-gestion{
   display: flex;
-  width: 33%;
   flex-direction: column;
   align-items: center;
 }
 .container-comptabilite{
   display: flex;
-  width: 33%;
   flex-direction: column;
   align-items: center;
 }
 .container-conseil{
   display: flex;
-  width: 33%;
   flex-direction: column;
   align-items: center;
 }
@@ -463,8 +459,43 @@ opacity: 1;
   background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
   border: 1.5px solid var(--unnamed-color-000000);
   background: #FFFFFF 0% 0% no-repeat padding-box;
-  width: 40%;
+
 }
 .gestion{
 text-transform: uppercase;
+}
+.back-compta{
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  border: 1.5px solid var(--unnamed-color-000000);
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+
+
+}
+.back-conseil{
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  border: 1.5px solid var(--unnamed-color-000000);
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+
+
+}
+.container-clone-expertise{
+  display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    
+}
+.clone-expertise{
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: all 0.5s ease;
+}
+.container-clone-expertise:hover{
+  opacity: 1;
 }
