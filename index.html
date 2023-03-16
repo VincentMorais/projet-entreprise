@@ -30,23 +30,49 @@
                 <button class='espace-client'>Espace client</button>
               </li>
             </ul>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+              <span class="hamburger"></span>
+              <span class="hamburger"></span>
+              <span class="hamburger"></span>
+            </button>
+            
           </nav>
          
     </section>
-<section>
-    <div id="picture-container">
+    <script>
+      const navToggle = document.querySelector('.nav-toggle');
+      const navItems = document.querySelector('.nav-items');
+  
+      navToggle.addEventListener('click', () => {
+        navItems.classList.toggle('show');
+      });
+    </script>
+
+    <div class="picture-container">
         <div id="text-container">
           <h1 class="test"> Vous avez des projets ?</h1>
-          <h2 class="test2">Votre expert-comptable est la pour les réaliser.</h2>
-          <p>Nous confier votre comptabilité et la gestion de votre entreprise c'est bénéficier d'un accompagnement sur mesure et d'un avenir sécurisé.</p>
-          <button>Mon bouton</button>
+          <h1 class="test2">Votre expert-comptable <br> est là pour les réaliser.</h1>
+          <p class="test3">Nous confier votre comptabilité et la gestion de votre entreprise c'est bénéficier d'un
+             <br> accompagnement sur mesure et d'un avenir sécurisé.</p>
+          <button class="contacter">Nous contacter</button>
         </div>
         <div id="image-container">
-          <img src="image.jpg" alt="Description de l'image" />
-          <div id="border"></div>
-        </div>
+          <div class="image-hover">
+            <img class="img-accueil" src="/images/photo-accueil-header-equipe-cabinet-gsexpertise.png" alt="Description de l'image" />
+          </div>
+        </div>        
       </div>
-    </section>
+      <div class="container-defile">
+        <div class="defileParent">
+          <span class="defile" 
+          data-text="Notre mot d ordre ? Échanger pour avancer ! &nbsp; Notre mot d ordre ? Échanger pour avancer ! &nbsp; Notre mot d ordre ? Échanger pour avancer ! &nbsp; Notre mot d ordre ? Échanger pour avancer !"> 
+          &nbsp; Notre mot dordre ?  Échanger pour avancer !&nbsp; Notre mot dordre ? Échanger pour avancer ! &nbsp;Notre mot dordre ? Échanger pour avancer ! &nbsp;Notre mot d ordre ? Échanger pour avancer ! Notre mot d ordre ? Échanger pour avancer !
+          </span>
+          </div>
+      </div>
+
+
+
 </body>
 </html>
 
