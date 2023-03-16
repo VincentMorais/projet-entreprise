@@ -1,0 +1,228 @@
+:root {
+
+    /* Colors: */
+    --unnamed-color-f16f51: #F16F51;
+    --unnamed-color-ffffff: #FFFFFF;
+    --unnamed-color-000000: #000000;
+    --unnamed-color-f8cdc5: #F8CDC5;
+    --unnamed-color-ee6f52: #EE6F52;
+    
+    /* Font/text values */
+    --unnamed-font-family-lust-sans: Lust Sans;
+    --unnamed-font-family-dunbar-text: Dunbar Text;
+    --unnamed-font-style-normal: normal;
+    --unnamed-font-weight-bold: bold;
+    --unnamed-font-weight-normal: normal;
+    --unnamed-font-size-16: 16px;
+    --unnamed-font-size-31: 31px;
+    --unnamed-font-size-43: 43px;
+    --unnamed-character-spacing-0: 0px;
+    --unnamed-line-spacing-24: 24px;
+    --unnamed-line-spacing-26: 26px;
+    --unnamed-line-spacing-54: 54px;
+    --unnamed-text-transform-uppercase: uppercase;
+    }
+    
+    /* Character Styles */
+    .h1-noir {
+    font-family: var(--unnamed-font-family-lust-sans);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-43);
+    line-height: var(--unnamed-line-spacing-54);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-000000);
+    }
+    .h1-blanc {
+    font-family: var(--unnamed-font-family-lust-sans);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-43);
+    line-height: var(--unnamed-line-spacing-54);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-ffffff);
+    }
+    .h1-orange {
+    font-family: var(--unnamed-font-family-lust-sans);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-bold);
+    font-size: var(--unnamed-font-size-43);
+    line-height: var(--unnamed-line-spacing-54);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-ee6f52);
+    }
+    .h2-noir {
+    font-family: var(--unnamed-font-family-dunbar-text);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-31);
+    line-height: var(--unnamed-line-spacing-26);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-000000);
+    text-transform: var(--unnamed-text-transform-uppercase);
+    }
+    .h2-orange {
+    font-family: var(--unnamed-font-family-dunbar-text);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-31);
+    line-height: var(--unnamed-line-spacing-26);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-ee6f52);
+    text-transform: var(--unnamed-text-transform-uppercase);
+    }
+    .labeur-blanc {
+    font-family: var(--unnamed-font-family-dunbar-text);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-16);
+    line-height: var(--unnamed-line-spacing-24);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-ffffff);
+    }
+    .labeur-noir {
+    font-family: var(--unnamed-font-family-dunbar-text);
+    font-style: var(--unnamed-font-style-normal);
+    font-weight: var(--unnamed-font-weight-normal);
+    font-size: var(--unnamed-font-size-16);
+    line-height: var(--unnamed-line-spacing-24);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-000000);
+    }
+
+
+
+
+body{
+    background-color: #000000;
+    color: white;
+}
+
+#nav {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #000000;
+    text-align: right;
+    border-bottom: 1px solid #ff7b00;
+}
+  
+  .logo img {
+    height: 50px;
+    width: auto;
+  }
+  
+  .nav-items {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-items li:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+  .nav-items a {
+    color: #ffffff;
+    text-decoration: none;
+
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 18px/var(--unnamed-line-spacing-26) var(--unnamed-font-family-dunbar-text);
+    letter-spacing: var(--unnamed-character-spacing-0);
+
+
+
+    font-size: 16px;
+  }
+  .nav-items a:hover{
+    color: #ff7b00;
+  }
+  .espace-client{
+    cursor: pointer;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    border: 2px solid #ffffff;
+    background-color: #000000;
+    border-radius: 25px;
+   font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 18px/var(--unnamed-line-spacing-26) var(--unnamed-font-family-dunbar-text);
+letter-spacing: var(--unnamed-character-spacing-0);
+    font-size: 16px;
+  }
+    .espace-client:hover{
+        background-color: #ff7b00;
+        border: 2px solid #ff7b00;
+    }
+    .picture-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px;
+        background-color: #000000;
+        color: white;
+      }
+      
+      .text-container {
+        max-width: 50%;
+      }
+      
+      .image-container {
+        position: relative;
+        width: 50%;
+      }
+      
+      .image-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+      
+      .border {
+        position: absolute;
+        top: 0;
+        right: -20px;
+        bottom: 0;
+        width: calc(100% + 40px);
+        border: 2px solid #333;
+        border-radius: 4px;
+      }
+      .test{
+        /* Layout Properties */
+top: 238px;
+left: 62px;
+width: 650px;
+height: 54px;
+/* UI Properties */
+font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-43)/var(--unnamed-line-spacing-54) var(--unnamed-font-family-lust-sans);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-f16f51);
+text-align: left;
+font: normal normal bold 43px/54px Lust Sans;
+letter-spacing: 0px;
+color: #F16F51;
+opacity: 1;
+      }
+        .test2{
+            /* Layout Properties */
+top: 292px;
+left: 62px;
+width: 650px;
+height: 108px;
+/* UI Properties */
+font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-43)/var(--unnamed-line-spacing-54) var(--unnamed-font-family-lust-sans);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-ffffff);
+text-align: left;
+font: normal normal bold 43px/54px Lust Sans;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+        }
