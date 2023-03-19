@@ -1,3 +1,5 @@
+@import url(//db.onlinewebfonts.com/c/32f3799bd7e2e363b38066da76a1cc19?family=Lust+Slim+Regular);
+@import url('https://fonts.googleapis.com/css2?family=Lustria&display=swap');
 :root {
 
     /* Colors: */
@@ -98,6 +100,32 @@ body{
     color: white;
     margin: 0;
 }
+
+body h1{
+    font-family: "Lust Slim Sans";
+    font-weight: 500;
+    font-size: 43px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+body h2{
+    font-family: "Lustria";
+    font-weight: bold;
+    font-size: 23px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+p{
+  font-family: 'Lustria', serif;
+    font-weight: 400;
+    letter-spacing: 0px;
+}
+
 
 #nav {
   top: -8px;
@@ -223,7 +251,7 @@ letter-spacing: var(--unnamed-character-spacing-0);
       .test{
     font-size: 5vh;
     text-align: left;
-    font: normal normal bold Lust Sans;
+    font-weight: 500;
     letter-spacing: 0px;
     color: #F16F51;
     opacity: 1;
@@ -231,18 +259,20 @@ letter-spacing: var(--unnamed-character-spacing-0);
       }
         .test2{
             /* Layout Properties */
-top: 292px;
-left: 62px;
-/* UI Properties */
+       
+          top: 292px;
+          left: 62px;
+          /* UI Properties */
 
-color: var(--unnamed-color-ffffff);
-text-align: left;
-font-size: 5vh;
-font: normal normal bold  Lust Sans;
-letter-spacing: 0px;
-color: #FFFFFF;
-opacity: 1;
-margin-top: 0px ;
+          color: var(--unnamed-color-ffffff);
+          text-align: left;
+          font-size: 5vh;   
+          letter-spacing: 2px;
+          font-weight: 100;
+          font: normal normal bold  Lust Sans;
+          color: #FFFFFF;
+          opacity: 1;
+          margin-top: 0px ;
         }
         .test3{
           padding-top: 3vh;
@@ -352,6 +382,7 @@ margin-top: 0px ;
   }
   #title-expertise-orange{
     font-size: 1vh;
+    font-weight: 500;
   }
 }
 
@@ -444,7 +475,6 @@ margin-top: 0px ;
 #h1-expertise-orange{
   text-align: left;
   font-size: 3vw;
-  font: normal normal bold Lust Sans;
   letter-spacing: 0px;
   color: #FFFFFF;
   opacity: 1;
@@ -485,12 +515,31 @@ margin-top: 0px ;
 .container-maitrise p{
 
 }
+@media screen and (max-width: 1050px) {
+  .container-maitrise{
+    flex-direction: column;
+    align-items: center; 
+  }
+  .img-container .conseil-img{
+    width: 100%;
+   transform: translate(10%, 30%);
+  }
+  .back-conseil:hover .img-container .conseil-img { 
+    transform: translate(80%, 30%);
+    transition:  0.5s;
+  }
+    
+  .container-maitrise p{
+    font-size: 13.5px;
+    height: 100%;
+    width: 75%;
+    margin-top: 2vh;
+  }
+}
 
 .container-comptabilite{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 25%;
+  width: 390px;
+  height: 248px;  
 }
 
 .container-gestion{
@@ -522,14 +571,17 @@ margin-top: 0px ;
 }
 .gestion{
   text-transform: uppercase;
+  margin: 1%;
 }
 .gestion-img{
-  transform: translate(5%, 36%);
+  transform: translate(10%, 40%);
   position: absolute;
   width: 100%;
 }
-.text-gestion{
+.text-conseil{
   opacity: 0;
+  margin: 5%;
+  font-size: 15px;
 }
 .container-conseil{
   display: flex;
@@ -542,9 +594,11 @@ margin-top: 0px ;
   border: 1.5px solid var(--unnamed-color-000000);
   position: relative; 
   width: 90%;
+  height: 80%;
 }
 .back-conseil:hover .conseil-img { 
-  transform: translate(5%, 90%);
+  transform: translate(5%, 100%);
+  transition:  0.5s;
 }
 .back-conseil:hover .conseil { 
   color: #F16F51;
@@ -554,6 +608,7 @@ margin-top: 0px ;
 }
 .conseil{
   text-transform: uppercase;
+  margin: 2%;
 }
 .conseil-img{
   transform: translate(5%, 36%);
@@ -596,14 +651,6 @@ margin-top: 0px ;
   opacity: 0;
 }
 
-
-
-
-
-
-
-
-
 .container-devis{
   display: flex;
   flex-direction: column;
@@ -613,7 +660,7 @@ margin-top: 0px ;
   height: 18vw;
 }
 .bretagne-bas{
-  width: 20vw;
+  width: 15vw;
   position: absolute;
   transform: translateX(-5%);
   height: auto;
@@ -689,6 +736,12 @@ footer {
   text-align: center;
   display: flex;
   flex-direction: column;
+}
+
+footer p {
+  font-weight: 400;
+  letter-spacing: 0px;
+  color: #ffffff;
 }
 
 .footer-left {
@@ -819,6 +872,183 @@ font-size: 20px;
   background-image: url(images/icone-footer-telephone.svg);
   
 }
-@media screen   {
+@media screen and (max-width: 640px)  {
+  .container-expertise {
+    display: flex;
+    border-bottom: 4px solid #EE6F52;
+    height: 107vw;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.container-img-expertise{
+  display: none;
+}
+.text-expertise{
 
+  background-image: url(images/photo-accueil-cabinet-meeting.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  margin-left: 0px;
+}
+#title-expertise-orange {
+  font-size: 9vw;
+  text-align: left;
+  font: normal normal bold Lust Sans;
+  letter-spacing: 0px;
+  color: #F16F51;
+  opacity: 1;
+  margin-bottom: 0px;
+}
+#h1-expertise-orange {
+  text-align: left;
+  font-size: 5vw;
+  letter-spacing: 0px;
+  color: #FFFFFF;
+  opacity: 1;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.text-expertise p {
+  font-size: 4vw;
+  padding: 0px;
+}
+#decouvrir {
+  cursor: pointer;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  color: white;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  border-radius: 50px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 18px/var(--unnamed-line-spacing-26) var(--unnamed-font-family-dunbar-text);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  font-size: 20px;
+}
+.container-devis {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 90vw;
+  height: 25vw;
+}
+.devis {
+  cursor: pointer;
+  padding-left: 1vh;
+  padding-right: 1vh;
+  padding-top: 0vh;
+  padding-bottom: 0vh;
+  color: rgb(0, 0, 0);
+  border: 2px solid #000000;
+  background-color: #F1AA9D;
+  border-radius: 50px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 18px/var(--unnamed-line-spacing-26) var(--unnamed-font-family-dunbar-text);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  font-size: 17px;
+}
+.bretagne-bas {
+  width: 23vw;
+  position: absolute;
+  transform: translateX(-5%);
+  height: auto;
+  max-width: 100%;
+  transform: translateY(-100%);
+}
+#h1-devis {
+  text-align: center;
+  font-size: 4vw;
+}
+.logo-footer{
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin-top: 5%;
+}
+.footer-right img {
+  position: absolute;
+  right: 0;
+  max-width: 100%;
+  width: 54%;
+  height: auto;
+  transform: translate(0%, -17%);
+}
+.text-footer {
+  text-align: right;
+}
+.container-text {
+  text-align: right;
+}
+.container-form-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  align-content: flex-end;
+}
+.footer-right input[type="email"] {
+  padding: 5px;
+  border: none;
+  width: 100%;
+  /* margin-right: 10px; */
+  background-color: #F1AA9D;
+  border: 1px solid #F16F51;
+  height: 3vw;
+  z-index: 1;
+}
+.container-form {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+}
+#decouvrir {
+  cursor: pointer;
+  padding-left: 1vh;
+  padding-right: 1vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  color: white;
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  border-radius: 50px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 18px/var(--unnamed-line-spacing-26) var(--unnamed-font-family-dunbar-text);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  font-size: 20px;
+  margin-left: 46px;
+}
+.footer-right input[type="email"] {
+  padding: 5px;
+  border: none;
+  width: 92%;
+  /* margin-right: 10px; */
+  background-color: #F1AA9D;
+  border: 1px solid #F16F51;
+  height: 3vw;
+  /* margin-left: 0px; */
+  z-index: 1;
+}
+.defile {
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-43)/var(--unnamed-line-spacing-54) var(--unnamed-font-family-lust-sans);
+  display: block;
+  animation: linear marqueelike 30s infinite;
+  margin-left: -100%;
+  padding: 0 5px;
+  text-align: left;
+  height: 60px;
+  color: black;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+  font-size: 200%;
+}
+
+}
+@media screen and (min-width: 1600px){
+  .container-img-expertise {
+    position: relative;
+    width: 110vh;
+    height: 40vw;
+}
 }
